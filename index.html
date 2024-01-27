@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<title>Studyguide2024</title>
+	<script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if the entered credentials match the predefined values
+      if (username === "taseen" && password === "studyguide") {
+        alert("Login successful!");
+
+        // Hide the login form
+        document.getElementById("loginForm").style.display = "none";
+
+        // Show links
+        document.getElementById("links").style.display = "block";
+        
+        // Show contact section
+        document.getElementById("contactSection").style.display = "block";
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+</head>
+<body>
+<div class="container" id="loginForm">
+<h1 style="text-align: center;">Login</h1>
+
+<form>
+<p style="text-align: center;"><label for="username">Username:</label> <input id="username" placeholder="Enter your username" type="text" /> <label for="password">Password:</label> <input id="password" placeholder="Enter your password" type="password" /><button onclick="login()" type="button">Login</button></p>
+</form>
+</div>
+
+<div id="links" style="display: none;">
+<h1>Studyguide2024</h1>
+
+<ul>
+	<li><a href="https://drive.google.com/file/d/1SrLR-owzQcJZ-3-A9feAW5InEhN4foI2/view?usp=sharing">Precalculus Study Guide (Incomplete)</a></li>
+	<li><a href="https://drive.google.com/file/d/1EW_OR1nYUHw6Cax-_fhIIPlIwSw1mzYy/view?usp=sharing">Physics Study Guide (Incomplete)</a></li>
+	<li><a href="https://drive.google.com/file/d/1i4vjYGx1GhXTlWMQT89_CtukibBgHJ99/view?usp=sharing">Chemistry Study Guide</a></li>
+</ul>
+</div>
+</body>
+</html>
